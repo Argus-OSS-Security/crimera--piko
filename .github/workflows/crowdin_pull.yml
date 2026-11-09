@@ -1,9 +1,10 @@
 name: Crowdin pull and merge
-on:
-  schedule:
-    - cron: "0 */12 * * *" # every 12 hours
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   schedule:
+#     - cron: "0 */12 * * *" # every 12 hours
+#   workflow_dispatch:
+# 
 concurrency:
   group: crowdin-pull
   cancel-in-progress: false
